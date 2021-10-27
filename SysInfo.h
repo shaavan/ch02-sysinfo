@@ -1,6 +1,7 @@
 #ifndef SYSINFO_H
 #define SYSINFO_H
 
+#include <QtGlobal>
 
 class SysInfo
 {

@@ -13,7 +13,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     MainWindow.cpp \
-    SysInfo.cpp
+    SysInfo.cpp \
 
 HEADERS += \
     MainWindow.h \
@@ -22,6 +22,11 @@ HEADERS += \
 windows {
     SOURCES += SysInfoWindowsImpl.cpp
     HEADERS += SysInfoWindowsImpl.h
+}
+
+linux {
+    SOURCES += SysinfoLinuxImpl.cpp
+    HEADERS += SysinfoLinuxImpl.h
 }
 
 FORMS += \
