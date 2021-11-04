@@ -1,4 +1,5 @@
 QT       += core gui
+QT       += charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,11 +13,13 @@ TARGET = ch02-sysinfo
 TEMPLATE = app
 
 SOURCES += main.cpp \
+    CpuWidget.cpp \
     MainWindow.cpp \
     SysInfo.cpp \
     SysInfoWidget.cpp
 
 HEADERS += \
+    CpuWidget.h \
     MainWindow.h \
     SysInfo.h \
     SysInfoWidget.h

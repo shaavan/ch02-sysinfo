@@ -1,8 +1,6 @@
 #include <QVBoxLayout>
 #include "SysInfoWidget.h"
 
-using namespace QtCharts;
-
 SysInfoWidget::SysInfoWidget(QWidget *parent,
                              int startDelayMs,
                              int updateSeriesDelayMs) :
@@ -14,7 +12,7 @@ SysInfoWidget::SysInfoWidget(QWidget *parent,
             this, &SysInfoWidget::updateSeries);
     mRefreshTimer.start(startDelayMs);
 
-    mChartView.setRenderHint(QPainter::AntiAliasing);
+    mChartView.setRenderHint(QPainter::Antialiasing);
     mChartView.chart()->legend()->setVisible(false);
 
     QVBoxLayout* layout = new QVBoxLayout(this);

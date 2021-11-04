@@ -14,14 +14,14 @@ public:
                            int updateSeriesDelayMs = 500);
 
 protected:
-    QtCharts::QChartView& chartView();
+    QChartView& chartView();
 
 protected slots:
     virtual void updateSeries() = 0;
 
 private:
     QTimer mRefreshTimer;
-    QtCharts::QChartView& mChartView;
+    QChartView mChartView;
 
 signals:
 
