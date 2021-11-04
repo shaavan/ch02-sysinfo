@@ -15,12 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp \
     CpuWidget.cpp \
     MainWindow.cpp \
+    MemoryWidget.cpp \
     SysInfo.cpp \
     SysInfoWidget.cpp
 
 HEADERS += \
     CpuWidget.h \
     MainWindow.h \
+    MemoryWidget.h \
     SysInfo.h \
     SysInfoWidget.h
 

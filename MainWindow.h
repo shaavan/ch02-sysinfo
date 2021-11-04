@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <CpuWidget.h>
+#include "CpuWidget.h"
+#include "MemoryWidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,5 +20,6 @@ public:
 private:
     Ui::MainWindow *ui;
     CpuWidget mCpuWidget;
+    MemoryWidget mMemoryWidget;
 };
 #endif // MAINWINDOW_H

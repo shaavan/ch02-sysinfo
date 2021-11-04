@@ -3,7 +3,6 @@
 
 #include <QtCharts/QPieSeries>
 #include "SysInfoWidget.h"
-#include <SysInfo.h>
 
 class CpuWidget : public SysInfoWidget
 {

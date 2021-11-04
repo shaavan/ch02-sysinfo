@@ -1,4 +1,7 @@
+#include <SysInfo.h>
+
 #include "CpuWidget.h"
+
 
 CpuWidget::CpuWidget(QWidget* parent) :
     SysInfoWidget(parent),
